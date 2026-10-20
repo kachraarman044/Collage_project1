@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>journey to India - Book Your Dream Vacation</title>
+    <link rel="stylesheet" href="CSS/Booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-mountain"></i>
+                <span>journey to India</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login1.html">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Discover the World's <span>Beauty</span></h1>
+                <p>Experience unforgettable adventures tailored just for you</p>
+                <a href="#booking" class="btn-primary">Book Now</a>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <section class="featured-destinations">
+            <h2 class="section-title">Popular Destinations</h2>
+            <div class="destinations-container">
+                <div class="destination-card" data-destination="bali">
+                    <div class="destination-img" style="background-image: url('Images/booking\ 1.avif');">
+                        <div class="price-tag">From ₹899</div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Statue of Unity</h3>
+                        <p>Located about two hours from Vadodara, the Statue of Unity is dedicated to the Iron Man of India, Sardar Vallabh Bhai Patel. It stands proud at the Sandhu Bet island, overlooking the Sardar Sarovar Dam.</p>
+                        <a href="#booking" class="btn-select" data-destination="bali">Select</a>
+                    </div>
+                </div>
+                <div class="destination-card" data-destination="santorini">
+                    <div class="destination-img" style="background-image: url('Images/booking\ 2.avif');">
+                        <div class="price-tag">From ₹1199</div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Nahargarh Fort</h3>
+                        <p>Perched atop a ridge in the Aravalli Hills, Nahargarh Fort serves as a striking northern backdrop to the Jaipur city. Nahargarh, which means the abode of tigers, provided a formidable defence against the enemies in the olden days.</p>
+                        <a href="#booking" class="btn-select" data-destination="santorini">Select</a>
+                    </div>
+                </div>
+                <div class="destination-card" data-destination="kyoto">
+                    <div class="destination-img" style="background-image: url('Images/booking\ 3.jpg');">
+                        <div class="price-tag">From ₹1099</div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Rishikesh</h3>
+                        <p>Located in the foothills of the Himalayas along the convergence of Ganga and Chandrabhaga River, Rishikesh is a small town in the Dehradun district, located close to Haridwar in Uttarakhand.</p>
+                        <a href="#booking" class="btn-select" data-destination="kyoto">Select</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <div class="booking-container">
+                <h2 class="section-title">Book Your Adventure</h2>
+                <div class="booking-flex">
+                    <div class="booking-image">
+                        <img src="Images/booking.avif" alt="Booking image">
+                        <div class="booking-testimonial">
+                            <p>"The trip of a lifetime! TravelVista made everything so easy and memorable."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Testimonial author">
+                                <span>Sarah Johnson</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-form-container"> 
+                        <form id="booking-form" action="booking.php" method="post">
+                            <div class="form-group">
+                                <label for="destination">Destination</label>
+                                <select id="destination" name="destination" required>
+                                    <option value="">Select your destination</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Odisha">Odisha</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttarakhand">Uttarakhand</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                    <option value="Jammu And Kashmir">Jammu And Kashmir</option>
+                                    <option value="Andaman And Nicobar">Andaman And Nicobar</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Diu & Daman">Diu & Daman</option>
+                                    <option value="Lakshadweep">Lakshadweep</option>
+                                    <option value="Puducherry">Puducherry</option>
+                                    <option value="Ladakh">Ladakh</option>
+                                    <option value="NCT Of Delhi">NCT Of Delhi</option>
+                                </select>
+                            </div>
+                            
+                         <div class="form-row">
+                                <div class="form-group">
+                                    <label for="departure-date">Departure Date</label>
+                                    <input type="date" id="departure-date" name="departure-date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="return-date">Return Date</label>
+                                    <input type="date" id="return-date" name="return-date" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label  for="adults">Adults</label>
+                                    <div class="number-input">
+                                        <button type="button" class="decrease">-</button>
+                                        <input type="number" id="adults" name="adults" min="1" value="1" required>
+                                        <button type="button" class="increase">+</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label  for="children">Children</label>
+                                    <div class="number-input">
+                                        <button type="button" class="decrease">-</button>
+                                        <input type="number" id="children" name="children" min="0" value="0">
+                                        <button type="button" class="increase">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Package Type</label>
+                                <div class="package-options">
+                                    <div class="package-option">
+                                        <input type="radio" id="standard" name="package-type" value="standard">
+                                        <label for="standard">
+                                            <div class="package-name">Standard</div>
+                                            <div class="package-description">Basic tour with hotel and transportation</div>
+                                        </label>
+                                    </div>
+                                    <div class="package-option">
+                                        <input type="radio" id="premium" name="package-type" value="premium">
+                                        <label for="premium">
+                                            <div class="package-name">Premium</div>
+                                            <div class="package-description">Enhanced tour with 4-star accommodations and meals</div>
+                                        </label>
+                                    </div>
+                                    <div class="package-option">
+                                        <input type="radio" id="luxury" name="package-type" value="luxury">
+                                        <label for="luxury">
+                                            <div class="package-name">Luxury</div>
+                                            <div class="package-description">5-star experience with exclusive activities and services</div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="special-requests">Special Requests</label>
+                                <textarea id="special-requests" rows="3" placeholder="Any special requirements or preferences?" name="special-requests"></textarea>
+                            </div>
+                            
+                            <div class="price-summary">
+                                <div class="price-row">
+                                    <span>Base Price:</span>
+                                    <span id="base-price">₹0</span>
+                                </div>
+                                <div class="price-row">
+                                    <span>Taxes & Fees:</span>
+                                    <span id="taxes">₹0</span>
+                                </div>
+                                <div class="price-row total">
+                                    <span>Total:</span>
+                                    <span id="total-price">₹0</span>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" name="book" class="btn-book" id="book">Book Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us">
+            <h2 class="section-title">Why Choose TravelVista</h2>
+            <div class="features-container">
+                <div class="feature">
+                    <i class="fas fa-globe"></i>
+                    <h3>Expert Guides</h3>
+                    <p>Local experts who know every destination in-depth</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safe Travel</h3>
+                    <p>Your safety is our top priority on every journey</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Best Value</h3>
+                    <p>Exceptional experiences at competitive prices</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock assistance for any situation</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <i class="fas fa-mountain"></i>
+                    <span>journey to India</span>
+                </div>
+                <p>Discover the world with unforgettable experiences tailored just for you.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i>Bhesan,Junagadh, Gujarat, India,Pin Code : 362020</li>
+                    <li><i class="fas fa-phone"></i> 78630 55816</li>
+                    <li><i class="fas fa-phone"></i> 93281 18930</li>
+                     <li><i class="fas fa-phone"></i> 8849595114</li>
+                    <li><i class="fas fa-envelope"></i> foramkapdiya240@gmail.com</li>
+                    <li><i class="fas fa-envelope"></i> nisharathod21@gmail.com</li>
+                     <li><i class="fas fa-envelope"></i> kacharaarman2530@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get special offers and travel inspiration.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 journey to India. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="booking-success" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Booking Confirmed!</h2>
+            <p>Your adventure has been booked successfully.</p>
+            <div class="booking-details">
+                <!-- This will be filled by JavaScript -->
+            </div>
+            <p>A confirmation email has been sent to your inbox with all the details.</p>
+            <button class="btn-primary" id="close-modal">Done</button>
+        </div>
+    </div>
+
+    <script src="Java Script/Booking.js"></script>
+</body>
+</html> 

@@ -1,0 +1,203 @@
+header {
+    background-color: #616161;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 100px;
+    height: auto;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+.grid-item img{
+    height: 50%;
+    width: 50%;
+}
+/*footer*/
+footer {
+    background-color: #616161;
+    color: #ffffff; /* Orange */
+    padding: 40px 20px;
+    height:fit-content;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.image-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Crop image to fit in the box */
+    border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+}
+
+.image-box h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.image-box p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.image-box button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b92f5;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.image-box button:hover {
+    background-color: #0056b3;
+}
+
+.image-box button2 {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0177c0;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.image-box button2:hover {
+    background-color: #000000;
+}
+/*image slider*/
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    flex-shrink: 0; /* Prevent slides from shrinking */
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 500px; /* Fixed height for the slider */
+    object-fit:fill; /* Cover the container while maintaining aspect ratio */
+    display: block;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.slide:hover .slide-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-content h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+}
+
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure buttons are on top */
+}
+
+.nav-buttons button {
+    background: none;
+    color: white;
+    border: none; 
+    padding: 10px 15px;
+    font-size: 2em;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.nav-buttons button:hover {
+    opacity: 0.7;
+}
+
+a.contact{
+    color: #f4f4f4;
+}

@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.shadow {
+    box-shadow: 0 5px 15px rgba(248, 10, 10, 0.08) !important;
+}
+
+/* Navigation */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    transition: var(--transition);
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #f80707;
+}
+
+.login-btn {
+    margin-left: 10px;
+    padding: 0.4rem 1.2rem;
+    border-radius: 30px;
+}
+
+/* Contact Header */
+.contact-header {
+    background: url('../Images/Lodhi\ Garden.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    height: 360px;
+}
+
+.contact-header h1 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Contact Info */
+.contact-info {
+    background-color: white;
+    border-left: 4px solid #0d6efd;
+    height: 100%;
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(13, 110, 253, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d6efd;
+    font-size: 1.2rem;
+}
+
+.social-links a {
+    color: #0d6efd;
+    font-size: 1.2rem;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(13, 110, 253, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Form Styles */
+.form-control, .form-select {
+    padding: 0.6rem 1rem;
+    border-color: #e0e0e0;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1);
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary {
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+}
+
+/* Map Section */
+.map-section iframe {
+    border-radius: 0.25rem;
+}
+
+/* FAQ Section */
+.accordion-item {
+    border-color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    font-weight: 600;
+    padding: 1rem 1.25rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #e0e0e0;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+}
+
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #0d6efd !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .contact-header {
+        padding: 50px 0;
+    }
+    
+    .contact-info {
+        margin-bottom: 30px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .contact-info, .accordion-item {
+    animation: fadeIn 0.6s ease-out forwards;
+} 
